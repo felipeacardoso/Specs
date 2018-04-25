@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 Mimic is mimic.
                        DESC
 
-  s.homepage         = "http://stash.valepresente.net.br:7990/projects/HUBUDI/repos/mimic_ios/browse"
+  s.homepage         = "https://socialbank.visualstudio.com/Consumer/_git/MIMIC_IOS"
   s.license          = 'MIT'
   s.author           = { "Felipe Cardoso" => "felipe.cardoso@socialbank.com.br", "Alana Santos" => "alana.santos@socialbank.com.br" }
-  s.source           = { :git => "http://stash.valepresente.net.br:7990/scm/hubudi/mimic_ios.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://socialbank.visualstudio.com/Consumer/_git/MIMIC_IOS", :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
 
@@ -41,10 +41,12 @@ Mimic is mimic.
   s.dependency 'RSKImageCropper', '2.0.0'
   s.dependency 'SDWebImage', '4.3.0'
   s.dependency 'Observable', '1.3.2'
-  # s.dependency 'CRToast', '0.0.9'
+  s.dependency 'CRToast', '0.0.9'
+  s.dependency 'TTTAttributedLabel', '2.0.0'
   s.dependency 'KDCircularProgress', '1.5.2'
   s.dependency 'Shimmer', '1.0.2'
   s.dependency 'Charts', '3.0.5'
   s.dependency 'ObjectMapper', '3.1.0'
+  s.dependency 'EasyTipView', '1.0.2'
 
 end
