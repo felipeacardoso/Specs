@@ -21,14 +21,18 @@ s.description      = <<-DESC
 Social Bank API SDK for Swift 4
 DESC
 
-s.homepage         = "http://stash.valepresente.net.br:7990/projects/HUBUDI/repos/sb_api_ios/browse"
+s.homepage         = "https://socialbank.visualstudio.com/Consumer/_git/SB_API_IOS"
 s.license          = 'MIT'
 s.author           = { "Felipe Cardoso" => "felipe.cardoso@socialbank.com.br", "Alana Santos" => "alana.santos@socialbank.com.br" }
-s.source           = { :git => "http://stash.valepresente.net.br:7990/scm/hubudi/sb_api_ios.git", :tag => s.version.to_s }
+s.source           = { :git => "https://socialbank.visualstudio.com/Consumer/_git/SB_API_IOS", :tag => s.version.to_s }
 
 s.ios.deployment_target = '9.0'
 
-s.source_files = 'SocialBankAPI/Classes/Global/**/*'
+#s.source_files = 'SocialBankAPI/Classes/Global/**/*'
+
+s.subspec 'Core' do |sp|
+    sp.source_files = 'SocialBankAPI/Classes/Global/**/*'
+end
 
 s.subspec 'Auth' do |sp|
 sp.source_files = 'SocialBankAPI/Classes/Auth/**/*'
@@ -46,7 +50,23 @@ s.subspec 'Chat' do |sp|
     sp.source_files = 'SocialBankAPI/Classes/Chat/**/*'
 end
 
-s.dependency 'Giba', '2.0.2'
+s.subspec 'Transactions' do |sp|
+    sp.source_files = 'SocialBankAPI/Classes/Transactions/**/*'
+end
+
+s.subspec 'Finances' do |sp|
+    sp.source_files = 'SocialBankAPI/Classes/Finances/**/*'
+end
+
+s.subspec 'Notification' do |sp|
+    sp.source_files = 'SocialBankAPI/Classes/Notification/**/*'
+end
+
+s.subspec 'Campaign' do |sp|
+    sp.source_files = 'SocialBankAPI/Classes/Campaign/**/*'
+end
+
+s.dependency 'Giba', '2.0.3'
 s.dependency 'Locksmith', '4.0.0'
 s.dependency 'OneTimePassword', '3.0'
 
