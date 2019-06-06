@@ -46,7 +46,7 @@ Mimic is mimic.
   s.dependency 'KDCircularProgress', '1.5.2'
   s.dependency 'Shimmer', '1.0.2'
   s.dependency 'Charts', '3.0.5'
-  s.dependency 'ObjectMapper', '3.1.0'
+  s.dependency 'ObjectMapper', '3.3.0'
   s.dependency 'EasyTipView', '1.0.2'
 
 end
